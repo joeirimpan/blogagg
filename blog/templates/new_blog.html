@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{%  block content %}
+
+<hr>
+
+<div>
+
+<form method="post">
+{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit" class="waves-effect waves-light btn">Save</button>
+</form>
+
+</div>
+
+{% endblock %}
